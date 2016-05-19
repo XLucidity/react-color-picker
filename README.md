@@ -140,7 +140,7 @@ For setting up & starting the project locally, use:
 $ git clone https://github.com/zippyui/react-color-picker
 $ cd react-color-picker
 $ npm install
-$ npm dev
+$ npm run dev
 ```
 
 Now navigate to [localhost:8090](http://localhost:8090/)
