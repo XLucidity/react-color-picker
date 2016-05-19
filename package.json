@@ -1,5 +1,5 @@
 {
-  "name": "react-color-picker",
+  "name": "ping-react-color-picker",
   "version": "3.1.1",
   "description": "React Color Picker",
   "main": "lib/index.js",
@@ -46,7 +46,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pingidentity/react-color-picker.git"
+    "url": "git+https://github.com/pingidentity/react-color-picker.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pingidentity/react-color-picker/issues"
+  },
+  "homepage": "https://github.com/pingidentity/react-color-picker#readme",
+  "author": "Ping Identity UI Platform"
 }
