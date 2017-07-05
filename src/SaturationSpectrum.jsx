@@ -71,9 +71,12 @@ export default React.createClass(assign({
             x = this.state.mouseDown.x
         }
 
+				var xx = x - diff;
+				var yy = y - diff;
+
         return {
-            left: x - diff,
-            top : y - diff
+            left: isNaN(xx) ? 0 : xx,
+            top : isNaN(yy) ? 0 : yy
         }
     },
 
@@ -139,10 +142,10 @@ export default React.createClass(assign({
         var dragPos = this.getDragPosition()
 
         if (dragPos){
-            dragStyle.top     = dragPos.top
-            dragStyle.left    = dragPos.left
-            dragStyle.display = 'block'
-        }
+            dragStyle.top     = dragPos.top;
+            dragStyle.left    = dragPos.left;
+            dragStyle.display = 'block';
+        } 
 
         return (
             <div className={props.className} style={props.style} onMouseDown={this.onMouseDown}>

@@ -17,12 +17,12 @@ var RESULT = React.createClass({
 
     getDefaultProps: function(){
         return {
-            defaultColor    : require('./defaultColor'),
-            saturationWidth : 300,
-            saturationHeight: 300,
-            hueHeight       : null,
-            hueWidth        : 30,
-            hueMargin       : 10
+            //defaultColor    : require('./defaultColor'),
+            //saturationWidth : 300,
+            //saturationHeight: 300,
+            //hueHeight       : null,
+            //hueWidth        : 30,
+            //hueMargin       : 10
         }
     },
 
