@@ -92,7 +92,7 @@ module.exports = React.createClass(assign({
         var pos  = Math.round(hsv.h * height / 360)
         var diff = Math.round(size / 2)
 
-				var result = pos - diff;
+        var result = pos - diff;
         return isNaN(result) ? 0 : result;
     },
 

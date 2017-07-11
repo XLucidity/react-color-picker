@@ -71,8 +71,8 @@ export default React.createClass(assign({
             x = this.state.mouseDown.x
         }
 
-				var xx = x - diff;
-				var yy = y - diff;
+        var xx = x - diff;
+        var yy = y - diff;
 
         return {
             left: isNaN(xx) ? 0 : xx,
