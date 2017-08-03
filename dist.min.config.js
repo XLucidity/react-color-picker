@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
     entry: './src/index.jsx',
     output: {
@@ -15,5 +17,13 @@ module.exports = {
     resolve: {
         // Allow to omit extensions when requiring these files
         extensions: ['', '.js', '.jsx']
-    }
+    },
+	  plugins: [
+			new webpack.DefinePlugin({
+				'process.env': {
+					NODE_ENV: JSON.stringify('production')
+				}
+			}),
+			new webpack.optimize.UglifyJsPlugin()	
+		]
 }

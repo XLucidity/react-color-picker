@@ -10,7 +10,7 @@
     "css": "webpack --colors --progress --config stylus.config.js",
     "lib": "gulp && npm run css",
     "dist": "webpack --progress --colors --config dist.config.js",
-    "dist.min": "webpack --progress --colors --optimize-minimize --optimize-occurence-order --optimize-dedupe --config dist.min.config.js",
+    "dist.min": "webpack --progress --colors -p --config dist.min.config.js",
     "build": "npm run dist && npm run dist.min && npm run lib",
     "dev": "webpack-dev-server --progress --colors --port 8090"
   },
@@ -37,12 +37,13 @@
     "gulp-babel": "^5.1.0",
     "style-loader": "~0.8.1",
     "stylus-loader": "~0.4.0",
+    "uglify-js-brunch": "^2.10.0",
     "webpack": "^1.9.7",
     "webpack-dev-server": "^1.8.2"
   },
   "peerDependencies": {
-    "react": ">=0.14.0",
-    "react-dom": ">=0.14.0"
+    "react": ">=0.15.0",
+    "react-dom": ">=0.15.0"
   },
   "repository": {
     "type": "git",
